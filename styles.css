@@ -237,7 +237,6 @@ body{
 /*Home page hero section: video with text overlaid*/
 .hero {
   height: 100vh;
-  background-attachment: fixed; /* parallax */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -246,13 +245,6 @@ body{
   position: relative;
   overflow: hidden;
   padding: 0 20px;
-}
-
-/* parallax doesn't work well on mobile*/
-@media only screen and (max-device-width: 1366px) {
-  .hero {
-    background-attachment: scroll;
-  }
 }
 
 .hero video {
