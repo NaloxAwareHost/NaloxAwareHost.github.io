@@ -7,21 +7,6 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
 });
 
-//bio panels for team members
-function openBio(name, role, content, imageAddress) {
-    const panel = document.getElementById('bio-panel');
-    document.getElementById('bio-name').textContent = name;
-    document.getElementById('bio-role').textContent = role;
-    document.getElementById('bio-content').textContent = content;
-    document.getElementById('bio-image').src = imageAddress;
-  
-    panel.classList.add('open');
-}
-
-function closeBio() {
-    const panel = document.getElementById('bio-panel');
-    panel.classList.remove('open');
-}
 
 //slide in animations for content, triggered by scrolling to it
 var observer = new IntersectionObserver(function(entries) {
