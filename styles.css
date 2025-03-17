@@ -811,12 +811,23 @@ body{
 form {
   display: flex;
   flex-direction: column;
-  width: 40vw;
-  padding-top: 5vh;
+  width: 30vw;
+  padding-top: 3vh;
   padding-bottom: 5vh;
   margin: auto;
 }
 
 input, textarea {
   margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 960px) {
+  form {
+    width: 80vw;
+  }
+}
+
+.normal_heading {
+  text-align: center;
+  margin-top: 5vh;
 }
