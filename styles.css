@@ -503,6 +503,7 @@ body{
   background-size: cover;
   position: relative;
   color: #fff;
+  text-shadow: 2px 2px 5px black;
 }
 
 .services__card:nth-child(2) {
@@ -517,13 +518,13 @@ body{
 
 .services__card h2 {
   position: absolute;
-  top: 350px;
+  bottom: 3em;
   left: 30px;
 }
 
 .services__card p {
   position: absolute;
-  top: 400px;
+  bottom: 2.5em;
   left: 30px;
 }
 
