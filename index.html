@@ -12,26 +12,28 @@
   <body>
     <nav class="navbar">
       <div class="navbar__container">
-        <div class="nav__img--container">
-          <a href="/" id="navbar__logo">
+        <a href="/" id="navbar__logo">
+          <div class="nav__img--container">
             <img id="nav__img" src="/images/naloxaware_logo.jpg" alt="Logo">
             <span id="navbar__logo">NaloxAware</span>
-          </a>
-        </div>
+          </div>
+        </a>
         <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
             <a href="/" class="navbar__links">Home</a>
           </li>
-          <li class="navbar__item">
-            <a href="/about.html" class="navbar__links">About Us</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/ourteam.html" class="navbar__links">Our Team</a>
+          <li class="navbar__dropdown">
+            <p class="navbar__links navbar__dropdown__button">About Us ⏷</p>
+            <div class="navbar__dropdown__content">
+              <a href="/pageindevelopment.html" class="navbar__links">Our Mission</a>
+              <a href="/ourteam.html" class="navbar__links">Our Team</a>
+              <a href="/pageindevelopment.html" class="navbar__links">Our Work</a>
+            </div>
           </li>
           <li class="navbar__item">
             <a href="/joinus.html" class="navbar__links">Join Us</a>
