@@ -348,15 +348,15 @@ body{
   margin: 10px auto;
 }
 
+/* section title */
 .main__content h2 {
   font-size: 2.5rem;
-  background-color:  #ff8177;
-  background-image: linear-gradient(to top, #000 0%, #013c56 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+}
+
+/* subtitle */
+.main__content h4 {
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 .main__content p {
@@ -467,7 +467,6 @@ body{
   }
 
   .main__content h2 {
-    font-size: 3rem;
     margin-top: auto;
   }
 

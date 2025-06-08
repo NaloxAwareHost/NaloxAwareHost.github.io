@@ -22,7 +22,6 @@ var observer = new IntersectionObserver(function(entries) {
             if(element.isIntersecting){
                 element.target.classList.add('should__animate__slide-in');
                 element.target.classList.remove('invisible');
-                console.log(element.target.className);
             }
         }
     );
