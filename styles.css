@@ -52,6 +52,33 @@ body{
   padding: 0 50px;
 }
 
+.navbar__dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__dropdown__content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 20px 6px rgba(0, 0, 0, 0.15);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.navbar__dropdown__content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.navbar__dropdown:hover .navbar__dropdown__content {
+  display: block;
+}
+
 #navbar__logo {
   background-color: #ff8177;
   background-image: linear-gradient(to top, #cac083 0%, #ffb199 100%);
