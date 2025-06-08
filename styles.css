@@ -52,31 +52,49 @@ body{
   padding: 0 50px;
 }
 
-.navbar__dropdown {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
+/* navbar dropdown */
 .navbar__dropdown__content {
   display: none;
-  position: absolute;
-  top: 100%;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 20px 6px rgba(0, 0, 0, 0.15);
-  padding: 12px 16px;
-  z-index: 1;
 }
 
-.navbar__dropdown__content a {
-  color: black;
-  padding: 12px 16px;
-  display: block;
+/* navbar dropdown (big screens) */
+@media screen and (min-width: 960px) {
+  .navbar__dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar__dropdown__content {
+    position: absolute;
+    top: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 20px 6px rgba(0, 0, 0, 0.15);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .navbar__dropdown:hover .navbar__dropdown__content {
+    display: block;
+  }
+
+  .navbar__dropdown__content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+  }
 }
 
-.navbar__dropdown:hover .navbar__dropdown__content {
-  display: block;
+/* navbar dropdown (small screens) */
+@media screen and (max-width: 960px) {
+  .navbar__dropdown__content {
+    border-style: dashed;
+    border-color: gray;
+  }
+  .navbar__dropdown__content.visible {
+    display: block;
+  }
 }
 
 #navbar__logo {
@@ -176,13 +194,13 @@ body{
   .navbar__menu {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 5px;
     margin: 0;
     width: 100%;
     position: absolute;
     top: -1000px;
     opacity: 0;
     transition: all 0.5s ease;
-    height: calc(60vh + 50px);
     z-index: -1;
     background: #131313;
     padding-bottom: 1rem;
@@ -194,7 +212,6 @@ body{
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: calc(60vh + 50px);
     font-size: 1.6rem;
   }
 
@@ -216,9 +233,8 @@ body{
 
   .navbar__links {
     text-align: center;
-    padding: 2rem;
+    padding: 20px;
     width: 100%;
-    display: table;
   }
 
   #mobile-menu {
@@ -239,7 +255,6 @@ body{
     align-items: center;
     width: 80%;
     height: 80px;
-    margin: 0;
   }
 
   .navbar__toggle .bar {

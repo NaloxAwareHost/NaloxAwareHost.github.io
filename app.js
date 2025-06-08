@@ -7,6 +7,13 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
 });
 
+// mobile navbar dropdown button
+const navbarDropdownButton = document.querySelector('.navbar__dropdown__button');
+const navbarDropdownContent = document.querySelector('.navbar__dropdown__content');
+
+navbarDropdownButton.addEventListener('click', function() {
+    navbarDropdownContent.classList.toggle('visible');
+});
 
 //slide in animations for content, triggered by scrolling to it
 var observer = new IntersectionObserver(function(entries) {
