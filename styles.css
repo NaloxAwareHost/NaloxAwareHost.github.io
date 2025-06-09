@@ -342,6 +342,10 @@ body{
   padding: 30px 50px;
 }
 
+.main__content {
+  margin: 5%;
+}
+
 .main__content img {
   display: block;
   margin: 10px auto;
@@ -447,7 +451,6 @@ body{
 
 .youtube_embed_container iframe {
   position: absolute;
-  margin: 5%;
   top: 0;
   left: 0;
   width: 100%;
