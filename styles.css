@@ -340,7 +340,6 @@ body{
   width: 100%;
   max-width: 1300px;
   padding: 30px 50px;
-  padding-bottom: 7rem;
 }
 
 .main__content img {
@@ -360,7 +359,8 @@ body{
 }
 
 .main__content p {
-  margin-top: 1rem;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
   font-size: 1.5rem;
   font-weight: 200;
   color: #000;
@@ -432,10 +432,6 @@ body{
   text-align: center;
 }
 
-.main__img--container img{
-  margin-bottom: 3rem;
-}
-
 #main__img {
   height: 80%;
   width: 80%;
@@ -476,7 +472,7 @@ body{
   
   .main__content {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .main_content h1 {
