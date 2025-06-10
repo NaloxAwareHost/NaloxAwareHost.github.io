@@ -346,9 +346,11 @@ body{
   margin: 5%;
 }
 
-.main__content img {
+.main__container img {
   display: block;
   margin: 10px auto;
+  height: 80%;
+  width: 80%;
 }
 
 /* section title */
@@ -436,9 +438,8 @@ body{
   text-align: center;
 }
 
-#main__img {
-  height: 80%;
-  width: 80%;
+.main__img--container img {
+  margin: 40px 0;
 }
 
 .youtube_embed_container {
