@@ -25,7 +25,7 @@ var observer = new IntersectionObserver(function(entries) {
             }
         }
     );
-}, { threshold: [0.3] });
+}, { threshold: [0.2] });
 
 var contents=document.getElementsByClassName('main__content');
 Array.from(contents).forEach(element => {
