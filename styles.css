@@ -277,10 +277,11 @@ body{
 
 /*Home page hero section: video with text overlaid*/
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -288,7 +289,7 @@ body{
   padding: 0 20px;
 }
 
-.hero video {
+.hero video, .hero img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -317,6 +318,16 @@ body{
   z-index: 1;
   text-align: center;
   transform: translateY(-50%);
+}
+
+.hero p {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-shadow: black 1px 1px 10px;
+  z-index: 1;
+  margin: 0.5em 20%;
 }
 
 .hero::before {
