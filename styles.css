@@ -347,6 +347,11 @@ body{
   }
 }
 
+.homepage_heading {
+  text-align: center;
+  margin: 1.5em 0.2em;
+}
+
 .main__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
